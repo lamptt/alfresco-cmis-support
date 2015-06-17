@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="la:halong" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+	<description>lamptt'S halong</description>
+	<author>lamptt</author>
+	<version>1.0</version>
+	<imports>
+		<import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+		<import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+	</imports>
+	<namespaces>
+		<namespace uri="http://zalu.vn/model/halong/1.0" prefix="la"/>
+	</namespaces>
+
+	<types>
+		<type name="la:vbhc">
+			<parent>cm:content</parent>
+			<properties>
+				<property name="la:v1">
+					<type>d:text</type>
+				</property>
+				<property name="la:v2">
+					<type>d:text</type>
+				</property>
+				<property name="la:v3">
+					<type>d:text</type>
+				</property>
+				<property name="la:v4">
+					<type>d:date</type>
+				</property>
+				<property name="la:v5">
+					<type>d:text</type>
+				</property>
+				<property name="la:v6">
+					<type>d:text</type>
+				</property>
+				<property name="la:v7">
+					<type>d:text</type>
+				</property>
+				<property name="la:v8">
+					<type>d:text</type>
+				</property>
+				<property name="la:v9">
+					<type>d:text</type>
+				</property>
+				<property name="la:v10">
+					<type>d:text</type>
+				</property>
+				<property name="la:v11">
+					<type>d:text</type>
+				</property>
+			</properties>
+		</type>
+	
+		<type name="la:bienlai">
+			<parent>cm:content</parent>
+			<properties>
+				<property name="la:bl1">
+					<type>d:text</type>
+				</property>
+				<property name="la:bl2">
+					<type>d:text</type>
+				</property>
+				<property name="la:bl3">
+					<type>d:text</type>
+				</property>
+				<property name="la:bl4">
+					<type>d:text</type>
+				</property>
+				<property name="la:bl5">
+					<type>d:text</type>
+				</property>
+				<property name="la:bl6">
+					<type>d:text</type>
+				</property>
+				<property name="la:bl7">
+					<type>d:text</type>
+				</property>
+				<property name="la:bl8">
+					<type>d:float</type>
+				</property>
+				<property name="la:bl9">
+					<type>d:date</type>
+				</property>
+				<property name="la:bl10">
+					<type>d:text</type>
+				</property>
+			</properties>
+		</type>
+	
+		<type name="la:bienban">
+			<parent>cm:content</parent>
+			<properties>
+				<property name="la:bb1">
+					<type>d:text</type>
+				</property>
+				<property name="la:bb2">
+					<type>d:datetime</type>
+				</property>
+				<property name="la:bb3">
+					<type>d:text</type>
+				</property>
+				<property name="la:bb4">
+					<type>d:text</type>
+				</property>
+				<property name="la:bb5">
+					<type>d:text</type>
+				</property>
+				<property name="la:bb6">
+					<type>d:text</type>
+				</property>
+			</properties>
+		</type>
+	
+		<type name="la:bang">
+			<parent>cm:content</parent>
+			<properties>
+				<property name="la:b1">
+					<type>d:text</type>
+				</property>
+				<property name="la:b2">
+					<type>d:text</type>
+				</property>
+				<property name="la:b3">
+					<type>d:date</type>
+				</property>
+				<property name="la:b4">
+					<type>d:text</type>
+				</property>
+			</properties>
+		</type>
+	</types>
+	
+	<aspects>
+		<!-- Definition of new Pages Aspect dem so Trang tai lieu-->
+		<aspect name="la:pages">
+			<title>PDF Pages</title>
+			<properties>
+				<property name="la:numberofpage">
+					<type>d:int</type>
+					<protected>true</protected>
+				</property>
+			</properties>
+		</aspect>	
+	</aspects>
+</model>
